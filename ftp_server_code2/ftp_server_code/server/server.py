@@ -24,7 +24,7 @@ def start_ftp_server():
     handler = FTPHandler
     handler.authorizer = authorizer
 
-    server = FTPServer(("192.168.1.102", 2121), handler)
+    server = FTPServer(("SERVERIP", 2121), handler)
 
     def signal_handler(sig, frame):
         print('Shutting down server...')

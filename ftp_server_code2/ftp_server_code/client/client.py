@@ -21,7 +21,7 @@ class FTPClient:
         server_label = ttk.Label(frame, text="Server:")
         server_label.grid(row=0, column=0, sticky=tk.W, padx=5, pady=5)
         self.server_entry = ttk.Entry(frame, width=30)
-        self.server_entry.insert(0, '192.168.89.92')
+        self.server_entry.insert(0, 'SERVERIP')
         self.server_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), padx=5, pady=5)
 
         port_label = ttk.Label(frame, text="Port:")
